@@ -13,6 +13,7 @@
 		86B23E3F299B73D20092C050 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86B23E3E299B73D20092C050 /* Assets.xcassets */; };
 		86B23E42299B73D20092C050 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86B23E41299B73D20092C050 /* Preview Assets.xcassets */; };
 		86B23E4F299B7DE80092C050 /* Sink_Subscribe_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B23E4E299B7DE80092C050 /* Sink_Subscribe_Tests.swift */; };
+		86B7E733299C0F4900D09CD7 /* Assign_Bind_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B7E732299C0F4900D09CD7 /* Assign_Bind_Tests.swift */; };
 		96E7E08BBEBA0335F655DADD /* Pods_CombineRxSwiftPracticeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E82224754C304609775D2629 /* Pods_CombineRxSwiftPracticeTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +39,7 @@
 		86B23E41299B73D20092C050 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		86B23E4C299B7DE80092C050 /* CombineRxSwiftPracticeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CombineRxSwiftPracticeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		86B23E4E299B7DE80092C050 /* Sink_Subscribe_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sink_Subscribe_Tests.swift; sourceTree = "<group>"; };
+		86B7E732299C0F4900D09CD7 /* Assign_Bind_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assign_Bind_Tests.swift; sourceTree = "<group>"; };
 		CEE1C369F636233BDCF470AD /* Pods-CombineRxSwiftPractice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CombineRxSwiftPractice.debug.xcconfig"; path = "Target Support Files/Pods-CombineRxSwiftPractice/Pods-CombineRxSwiftPractice.debug.xcconfig"; sourceTree = "<group>"; };
 		E82224754C304609775D2629 /* Pods_CombineRxSwiftPracticeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CombineRxSwiftPracticeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -105,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				86B23E4E299B7DE80092C050 /* Sink_Subscribe_Tests.swift */,
+				86B7E732299C0F4900D09CD7 /* Assign_Bind_Tests.swift */,
 			);
 			path = CombineRxSwiftPracticeTests;
 			sourceTree = "<group>";
@@ -306,6 +309,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				86B23E4F299B7DE80092C050 /* Sink_Subscribe_Tests.swift in Sources */,
+				86B7E733299C0F4900D09CD7 /* Assign_Bind_Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
