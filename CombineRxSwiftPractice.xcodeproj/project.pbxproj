@@ -12,7 +12,18 @@
 		86B23E3D299B73D10092C050 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B23E3C299B73D10092C050 /* ContentView.swift */; };
 		86B23E3F299B73D20092C050 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86B23E3E299B73D20092C050 /* Assets.xcassets */; };
 		86B23E42299B73D20092C050 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86B23E41299B73D20092C050 /* Preview Assets.xcassets */; };
+		86B23E4F299B7DE80092C050 /* Sink_Subscribe_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B23E4E299B7DE80092C050 /* Sink_Subscribe_Tests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		86B23E50299B7DE80092C050 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 86B23E2F299B73D10092C050 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 86B23E36299B73D10092C050;
+			remoteInfo = CombineRxSwiftPractice;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		28BAFED55DAEC6E0E5E6B2C4 /* Pods_CombineRxSwiftPractice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CombineRxSwiftPractice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,6 +33,8 @@
 		86B23E3C299B73D10092C050 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		86B23E3E299B73D20092C050 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		86B23E41299B73D20092C050 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		86B23E4C299B7DE80092C050 /* CombineRxSwiftPracticeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CombineRxSwiftPracticeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		86B23E4E299B7DE80092C050 /* Sink_Subscribe_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sink_Subscribe_Tests.swift; sourceTree = "<group>"; };
 		CEE1C369F636233BDCF470AD /* Pods-CombineRxSwiftPractice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CombineRxSwiftPractice.debug.xcconfig"; path = "Target Support Files/Pods-CombineRxSwiftPractice/Pods-CombineRxSwiftPractice.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -34,6 +47,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		86B23E49299B7DE80092C050 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -41,6 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				86B23E39299B73D10092C050 /* CombineRxSwiftPractice */,
+				86B23E4D299B7DE80092C050 /* CombineRxSwiftPracticeTests */,
 				86B23E38299B73D10092C050 /* Products */,
 				9C2EA6618817BFAE832831D6 /* Pods */,
 				F76C99757AFD4990A6057F64 /* Frameworks */,
@@ -51,6 +72,7 @@
 			isa = PBXGroup;
 			children = (
 				86B23E37299B73D10092C050 /* CombineRxSwiftPractice.app */,
+				86B23E4C299B7DE80092C050 /* CombineRxSwiftPracticeTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -74,13 +96,20 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		86B23E4D299B7DE80092C050 /* CombineRxSwiftPracticeTests */ = {
+			isa = PBXGroup;
+			children = (
+				86B23E4E299B7DE80092C050 /* Sink_Subscribe_Tests.swift */,
+			);
+			path = CombineRxSwiftPracticeTests;
+			sourceTree = "<group>";
+		};
 		9C2EA6618817BFAE832831D6 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				CEE1C369F636233BDCF470AD /* Pods-CombineRxSwiftPractice.debug.xcconfig */,
 				569B2229C4998823146E1D11 /* Pods-CombineRxSwiftPractice.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -114,6 +143,24 @@
 			productReference = 86B23E37299B73D10092C050 /* CombineRxSwiftPractice.app */;
 			productType = "com.apple.product-type.application";
 		};
+		86B23E4B299B7DE80092C050 /* CombineRxSwiftPracticeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 86B23E54299B7DE80092C050 /* Build configuration list for PBXNativeTarget "CombineRxSwiftPracticeTests" */;
+			buildPhases = (
+				86B23E48299B7DE80092C050 /* Sources */,
+				86B23E49299B7DE80092C050 /* Frameworks */,
+				86B23E4A299B7DE80092C050 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				86B23E51299B7DE80092C050 /* PBXTargetDependency */,
+			);
+			name = CombineRxSwiftPracticeTests;
+			productName = CombineRxSwiftPracticeTests;
+			productReference = 86B23E4C299B7DE80092C050 /* CombineRxSwiftPracticeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -126,6 +173,10 @@
 				TargetAttributes = {
 					86B23E36299B73D10092C050 = {
 						CreatedOnToolsVersion = 14.2;
+					};
+					86B23E4B299B7DE80092C050 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 86B23E36299B73D10092C050;
 					};
 				};
 			};
@@ -143,6 +194,7 @@
 			projectRoot = "";
 			targets = (
 				86B23E36299B73D10092C050 /* CombineRxSwiftPractice */,
+				86B23E4B299B7DE80092C050 /* CombineRxSwiftPracticeTests */,
 			);
 		};
 /* End PBXProject section */
@@ -154,6 +206,13 @@
 			files = (
 				86B23E42299B73D20092C050 /* Preview Assets.xcassets in Resources */,
 				86B23E3F299B73D20092C050 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86B23E4A299B7DE80092C050 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -211,7 +270,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		86B23E48299B7DE80092C050 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86B23E4F299B7DE80092C050 /* Sink_Subscribe_Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		86B23E51299B7DE80092C050 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 86B23E36299B73D10092C050 /* CombineRxSwiftPractice */;
+			targetProxy = 86B23E50299B7DE80092C050 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		86B23E43299B73D20092C050 /* Debug */ = {
@@ -388,6 +463,42 @@
 			};
 			name = Release;
 		};
+		86B23E52299B7DE80092C050 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HA4VLPKKLD;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gmail.wtrmiya.CombineRxSwiftPracticeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CombineRxSwiftPractice.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CombineRxSwiftPractice";
+			};
+			name = Debug;
+		};
+		86B23E53299B7DE80092C050 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HA4VLPKKLD;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gmail.wtrmiya.CombineRxSwiftPracticeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CombineRxSwiftPractice.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CombineRxSwiftPractice";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -405,6 +516,15 @@
 			buildConfigurations = (
 				86B23E46299B73D20092C050 /* Debug */,
 				86B23E47299B73D20092C050 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		86B23E54299B7DE80092C050 /* Build configuration list for PBXNativeTarget "CombineRxSwiftPracticeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				86B23E52299B7DE80092C050 /* Debug */,
+				86B23E53299B7DE80092C050 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
