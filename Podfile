@@ -9,4 +9,9 @@ target 'CombineRxSwiftPractice' do
   pod 'RxSwift'
   pod 'RxCocoa'
 
+  target 'CombineRxSwiftPracticeTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
 end
