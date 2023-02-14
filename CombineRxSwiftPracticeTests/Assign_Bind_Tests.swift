@@ -7,6 +7,8 @@
 
 import XCTest
 import Combine
+import RxSwift
+import RxCocoa
 
 final class Assign_Bind_Tests: XCTestCase {
 
@@ -33,5 +35,30 @@ final class Assign_Bind_Tests: XCTestCase {
         
         wait(for: [object.expectation], timeout: 5)
         XCTAssertNotNil(cancellable)
+    }
+    
+    // MARK: - RxSwift
+    func testBind() {
+        let expectation = XCTestExpectation(description: #function)
+        let expectedValue = "Hello"
+        
+        let bag = DisposeBag()
+        let subject = PublishSubject<String>()
+        
+        // テスト結果の観測のためにsubscribeを使用する。
+        subject
+            .subscribe(onNext: { value in
+                XCTAssertEqual(value, expectedValue)
+                expectation.fulfill()
+            })
+            .disposed(by: bag)
+        
+        let observable = Observable<String>.just(expectedValue)
+        
+        observable
+            .bind(to: subject)
+            .disposed(by: bag)
+        
+        wait(for: [expectation], timeout: 5)
     }
 }
