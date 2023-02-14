@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5C9C3DD48468D0E4C123ABDB /* Pods_CombineRxSwiftPractice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28BAFED55DAEC6E0E5E6B2C4 /* Pods_CombineRxSwiftPractice.framework */; };
 		86B23E3B299B73D10092C050 /* CombineRxSwiftPracticeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B23E3A299B73D10092C050 /* CombineRxSwiftPracticeApp.swift */; };
 		86B23E3D299B73D10092C050 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B23E3C299B73D10092C050 /* ContentView.swift */; };
 		86B23E3F299B73D20092C050 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86B23E3E299B73D20092C050 /* Assets.xcassets */; };
@@ -14,11 +15,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		28BAFED55DAEC6E0E5E6B2C4 /* Pods_CombineRxSwiftPractice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CombineRxSwiftPractice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		569B2229C4998823146E1D11 /* Pods-CombineRxSwiftPractice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CombineRxSwiftPractice.release.xcconfig"; path = "Target Support Files/Pods-CombineRxSwiftPractice/Pods-CombineRxSwiftPractice.release.xcconfig"; sourceTree = "<group>"; };
 		86B23E37299B73D10092C050 /* CombineRxSwiftPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CombineRxSwiftPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86B23E3A299B73D10092C050 /* CombineRxSwiftPracticeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineRxSwiftPracticeApp.swift; sourceTree = "<group>"; };
 		86B23E3C299B73D10092C050 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		86B23E3E299B73D20092C050 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		86B23E41299B73D20092C050 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CEE1C369F636233BDCF470AD /* Pods-CombineRxSwiftPractice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CombineRxSwiftPractice.debug.xcconfig"; path = "Target Support Files/Pods-CombineRxSwiftPractice/Pods-CombineRxSwiftPractice.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +30,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C9C3DD48468D0E4C123ABDB /* Pods_CombineRxSwiftPractice.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -37,6 +42,8 @@
 			children = (
 				86B23E39299B73D10092C050 /* CombineRxSwiftPractice */,
 				86B23E38299B73D10092C050 /* Products */,
+				9C2EA6618817BFAE832831D6 /* Pods */,
+				F76C99757AFD4990A6057F64 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +74,24 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		9C2EA6618817BFAE832831D6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CEE1C369F636233BDCF470AD /* Pods-CombineRxSwiftPractice.debug.xcconfig */,
+				569B2229C4998823146E1D11 /* Pods-CombineRxSwiftPractice.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F76C99757AFD4990A6057F64 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				28BAFED55DAEC6E0E5E6B2C4 /* Pods_CombineRxSwiftPractice.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 86B23E45299B73D20092C050 /* Build configuration list for PBXNativeTarget "CombineRxSwiftPractice" */;
 			buildPhases = (
+				5DA2EF7F0D5304A8F1135500 /* [CP] Check Pods Manifest.lock */,
 				86B23E33299B73D10092C050 /* Sources */,
 				86B23E34299B73D10092C050 /* Frameworks */,
 				86B23E35299B73D10092C050 /* Resources */,
+				A74CFD9FAFF09AF93CDED331 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5DA2EF7F0D5304A8F1135500 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CombineRxSwiftPractice-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A74CFD9FAFF09AF93CDED331 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CombineRxSwiftPractice/Pods-CombineRxSwiftPractice-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CombineRxSwiftPractice/Pods-CombineRxSwiftPractice-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CombineRxSwiftPractice/Pods-CombineRxSwiftPractice-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		86B23E33299B73D10092C050 /* Sources */ = {
@@ -261,6 +330,7 @@
 		};
 		86B23E46299B73D20092C050 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CEE1C369F636233BDCF470AD /* Pods-CombineRxSwiftPractice.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -290,6 +360,7 @@
 		};
 		86B23E47299B73D20092C050 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 569B2229C4998823146E1D11 /* Pods-CombineRxSwiftPractice.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
