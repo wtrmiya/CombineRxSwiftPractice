@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		5C9C3DD48468D0E4C123ABDB /* Pods_CombineRxSwiftPractice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28BAFED55DAEC6E0E5E6B2C4 /* Pods_CombineRxSwiftPractice.framework */; };
+		86792104299ECC580093D5B0 /* Throttle_Throttle_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86792103299ECC580093D5B0 /* Throttle_Throttle_Tests.swift */; };
+		86792106299ED2B10093D5B0 /* PassthroughSubject_PublishSubject_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86792105299ED2B10093D5B0 /* PassthroughSubject_PublishSubject_Tests.swift */; };
 		86B23E3B299B73D10092C050 /* CombineRxSwiftPracticeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B23E3A299B73D10092C050 /* CombineRxSwiftPracticeApp.swift */; };
 		86B23E3D299B73D10092C050 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B23E3C299B73D10092C050 /* ContentView.swift */; };
 		86B23E3F299B73D20092C050 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86B23E3E299B73D20092C050 /* Assets.xcassets */; };
@@ -32,6 +34,8 @@
 		28BAFED55DAEC6E0E5E6B2C4 /* Pods_CombineRxSwiftPractice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CombineRxSwiftPractice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		569B2229C4998823146E1D11 /* Pods-CombineRxSwiftPractice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CombineRxSwiftPractice.release.xcconfig"; path = "Target Support Files/Pods-CombineRxSwiftPractice/Pods-CombineRxSwiftPractice.release.xcconfig"; sourceTree = "<group>"; };
 		7856094F8134F7911984CB4D /* Pods-CombineRxSwiftPracticeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CombineRxSwiftPracticeTests.debug.xcconfig"; path = "Target Support Files/Pods-CombineRxSwiftPracticeTests/Pods-CombineRxSwiftPracticeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		86792103299ECC580093D5B0 /* Throttle_Throttle_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Throttle_Throttle_Tests.swift; sourceTree = "<group>"; };
+		86792105299ED2B10093D5B0 /* PassthroughSubject_PublishSubject_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassthroughSubject_PublishSubject_Tests.swift; sourceTree = "<group>"; };
 		86B23E37299B73D10092C050 /* CombineRxSwiftPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CombineRxSwiftPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86B23E3A299B73D10092C050 /* CombineRxSwiftPracticeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineRxSwiftPracticeApp.swift; sourceTree = "<group>"; };
 		86B23E3C299B73D10092C050 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -108,6 +112,8 @@
 			children = (
 				86B23E4E299B7DE80092C050 /* Sink_Subscribe_Tests.swift */,
 				86B7E732299C0F4900D09CD7 /* Assign_Bind_Tests.swift */,
+				86792103299ECC580093D5B0 /* Throttle_Throttle_Tests.swift */,
+				86792105299ED2B10093D5B0 /* PassthroughSubject_PublishSubject_Tests.swift */,
 			);
 			path = CombineRxSwiftPracticeTests;
 			sourceTree = "<group>";
@@ -308,7 +314,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86792106299ED2B10093D5B0 /* PassthroughSubject_PublishSubject_Tests.swift in Sources */,
 				86B23E4F299B7DE80092C050 /* Sink_Subscribe_Tests.swift in Sources */,
+				86792104299ECC580093D5B0 /* Throttle_Throttle_Tests.swift in Sources */,
 				86B7E733299C0F4900D09CD7 /* Assign_Bind_Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

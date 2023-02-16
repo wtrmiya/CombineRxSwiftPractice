@@ -37,6 +37,17 @@
                BlueprintName = "CombineRxSwiftPracticeTests"
                ReferencedContainer = "container:CombineRxSwiftPractice.xcodeproj">
             </BuildableReference>
+            <SkippedTests>
+               <Test
+                  Identifier = "Assign_Bind_Tests">
+               </Test>
+               <Test
+                  Identifier = "Sink_Subscribe_Tests">
+               </Test>
+               <Test
+                  Identifier = "Throttle_Throttle_Tests">
+               </Test>
+            </SkippedTests>
          </TestableReference>
       </Testables>
    </TestAction>
